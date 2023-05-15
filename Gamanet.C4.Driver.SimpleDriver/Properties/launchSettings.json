@@ -1,0 +1,24 @@
+{
+  "profiles": {
+	 "C4 Plugin Developer x64 (.NET Core)": {
+      "commandName": "Executable",
+      "executablePath": "%PluginDeveloperInstallationRootPath%\\Core\\C4DeveloperCore.exe",
+      "commandLineArgs": "-driverOut \"$(TargetPath)\""
+    },
+	"C4 Plugin Developer x86 (.NET Core)": {
+      "commandName": "Executable",
+      "executablePath": "%PluginDeveloperInstallationRootPath%\\Core\\C4DeveloperCore_x86.exe",
+      "commandLineArgs": "-driverOut \"$(TargetPath)\""
+    },
+	"C4 Plugin Developer x64 (.NET Framework)": {
+      "commandName": "Executable",
+      "executablePath": "%PluginDeveloperInstallationRootPath%\\Framework\\C4Developer.exe",
+      "commandLineArgs": "-driverOut \"$(TargetPath)\""
+    },	
+    "C4 Plugin Developer x86 (.NET Framework)": {
+      "commandName": "Executable",
+      "executablePath": "%PluginDeveloperInstallationRootPath%\\Framework\\C4Developer_x86.exe",
+      "commandLineArgs": "-driverOut \"$(TargetPath)\""
+    }
+  }
+}

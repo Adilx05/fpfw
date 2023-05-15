@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\@bin\Driver\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\@bin\Driver\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Gamanet.C4.SDK.Framework4" Version="4.1.0.32-alpha" />
+    <PackageReference Include="Gamanet.Common" Version="2020.0.0.594-beta" />
+    <PackageReference Include="Gamanet.Framework4.Interfaces" Version="2023.0.0.51-beta" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <PackageId>Gamanet.C4.Driver.SimpleDriver</PackageId>
+	  <Authors>Gamanet</Authors>
+	  <Product>C4 Integrated Security System</Product>
+	  <Copyright>Copyright © Gamanet a. s. 2020</Copyright>
+	  <Company>Gamanet</Company>
+	  <Version>1.0.0.0</Version>
+	  <AssemblyVersion>1.0.0.0</AssemblyVersion>
+	  <FileVersion>1.0.0.0</FileVersion>  
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <BaseOutputPath>..\..\@bin\Driver\</BaseOutputPath>
+  </PropertyGroup>
+  
+</Project>
